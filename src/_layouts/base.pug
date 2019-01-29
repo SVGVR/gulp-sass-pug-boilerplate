@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= title
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+        meta(name="description" content= content)
+        block head_end
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        <!--[if lte IE 9]>
+        p(class="browserupgrade") You are using an #[strong outdated] browser. Please #[a(href="https://browsehappy.com") upgrade your browser] to improve your experience and security.
+        <![endif]-->
+        block content
+
+        block body_end
+        script.
+          window.ga = function () {ga.q.push(arguments)}; ga.q = []; ga.l = +new Date;
+          ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview');
+        script(src="https://www.google-analytics.com/analytics.js" async defer)

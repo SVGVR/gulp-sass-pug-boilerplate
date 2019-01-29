@@ -1,0 +1,41 @@
+@import "variables";
+
+/*	FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/*	TYPOGRAPHY */
+a {
+  color: $link;
+  transition: color 200ms;
+  &:hover {
+    color: darken($link, 20);
+  }
+}
+
+@each $name, $value in $colorList {
+  .has-background-#{$name} {
+    background-color: $value;
+  }
+}
+
+@each $name, $value in $fontColors {
+  .has-text-#{$name} {
+    color: $value;
+  }
+}
+
+
+/* ------ Normalize ----- */
+html, body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}

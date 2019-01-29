@@ -1,0 +1,23 @@
+$orange: #DD5600;
+$yellow: #FFDD57;
+$green: #12A647;
+$turquoise: #07927F;
+$blue: #3273DC;
+$purple: #7e5ea3;
+$red: #F70032;
+$cyan: #209CEE;
+$black: hsl(0, 0%, 4%);
+$white: hsl(0, 0%, 100%);
+$light: hsl(0, 0%, 96%);
+$dark: hsl(0, 0%, 21%);
+
+$primary: $turquoise;
+$link: $blue;
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+
+$colorList: (black: $black, white: $white, light: $light, dark: $dark, primary: $primary, link: $link, info: $info, success: $success, warning: $warning, danger: $danger);
+
+$fontColors: (black: $black, white: $white, light: $light, dark: $dark, primary: $primary, link: $link, info: $info, success: $success, warning: $warning, danger: $danger, purple: $purple, orenge: $orange);
