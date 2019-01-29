@@ -37,8 +37,9 @@ $(document).ready(function () {
 	var tl = new TimelineLite();
 	var htmlAndBody = $('html, body');
 	tl.to(htmlAndBody, .1, {overflowY: "hidden"});
-	tl.staggerFromTo($('.animate'), .7, {y: -200, autoAlpha: 0}, {y:0, autoAlpha: 1}, 0.3);
-	tl.staggerFromTo($('.including'), .3, {x: -400, autoAlpha: 0}, {x:0, autoAlpha: 1}, 0.2);
+	tl.staggerFrom($('.animate'), .7, {y: -200, autoAlpha: 0}, 0.3);
+	tl.staggerFrom($('.including'), .3, {x: -400, autoAlpha: 0});
+	tl.staggerFrom($('.avatar'), .2, {x: 300, autoAlpha: 0});
 	tl.staggerFromTo($('.row.second div'), .5, {y: 400, autoAlpha: 0}, {y:0, autoAlpha: 1}, 0.3);
 	tl.to(htmlAndBody, .1, {overflowY: "auto"});
 });

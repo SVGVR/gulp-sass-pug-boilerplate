@@ -1,8 +1,11 @@
 div.row
-    div.col-sm-12.has-background-black.has-text-white.d-flex.align-items-center.justify-content-center.flex-column
-        h1.animate= message
-        h2.animate by #{author}
-        h1.including.has-text-danger including:
+    div.col-sm-12.has-background-black.has-text-white.d-flex.align-items-center.justify-content-center
+        div.col-sm-3
+            img.avatar(src="img/avatar.svg" alt="Avatar")
+        div.col-sm-9.flex-column
+            h1.animate= message
+            h2.animate by #{author}
+            h1.including.has-text-danger including:
 div.row.second
     div.col-sm-6.has-background-warning.d-flex.align-items-center.justify-content-center.flex-column
         h2 Scripts

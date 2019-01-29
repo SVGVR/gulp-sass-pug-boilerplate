@@ -1,10 +1,7 @@
 @import "variables";
 
-/*	FONTS */
-
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
-/*	TYPOGRAPHY */
 a {
   color: $link;
   transition: color 200ms;
@@ -25,8 +22,6 @@ a {
   }
 }
 
-
-/* ------ Normalize ----- */
 html, body {
   padding: 0;
   margin: 0;

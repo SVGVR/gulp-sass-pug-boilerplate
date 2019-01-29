@@ -95,16 +95,13 @@ gulp.task('image-min', function () {
  */
 gulp.task('pug', function () {
 	return gulp.src('./src/*.pug')
+	.pipe(plumber())
 	.pipe(data(function (file) {
 		const json = paths.input.data + path.basename(file.path) + '.json';
 		delete require.cache[require.resolve(json)];
 		return require(json);
 	}))
 	.pipe(pug({pretty: true}))
-	.on('error', function (err) {
-		process.stderr.write(err.message + '\n');
-		this.emit('end');
-	})
 	.pipe(gulp.dest(paths.public));
 });
 

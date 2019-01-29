@@ -1,7 +1,7 @@
 {
-  "name": "gulp-pug-sass-starter",
-  "version": "1.0.0",
-  "description": "A Pug and Sass starter project using gulp for task automation.",
+  "name": "gulp-sass-pug-boilerplate",
+  "version": "0.0.1",
+  "description": "Gulp boilerplate for rapid development",
   "main": "gulpfile.js",
   "author": "Sergey Gavrilov (SVGVR) <sergey.gt@gmail.com>",
   "scripts": {
@@ -13,7 +13,6 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "autoprefixer": "^9.4.6",
-    "babel-polyfill": "^6.26.0",
     "browser-sync": "^2.9.3",
     "del": "^3.0.0",
     "gulp": "^3.9.0",
@@ -33,6 +32,7 @@
   },
   "keywords": [
     "gulp",
+    "gulp-babel",
     "pug",
     "sass",
     "browsersync"

@@ -61,3 +61,24 @@ This project uses:
 - Выполните комманду `npm install` или `yarn` из базовой директории проекта для установки всех необходимых зависимостей.
 - выполните комманду `gulp` или `yarn start` или `npm start` для запуска сервера.
 - выполните комманду `gulp build` or `yarn run build` or `npm run build` для создания готового проекта.
+
+
+### Addons / Дополнения
+
+By default this project includes:
+
+- Jquery 3.1.0
+- GSAP
+- Bootstrap 4 Grid (**Note:** Only grid. You ask why? Because as developer I hate css frameworks with the whole bunch of useless styles and scripts.)
+- color variables
+
+If you don`t need something - just delete it.
+
+В данный проект по умолчанию включены:
+
+- Jquery 3.1.0
+- GSAP
+- Bootstrap 4 Grid (**Примечание:** Только сетка. Почему? Я, как разработчик, не люблю css фреймворки с кучей ненужных стилей и скриптов.)
+- цветовые переменные
+
+Если что-то из данного списка Вам не требуется - можете смело удалять.
