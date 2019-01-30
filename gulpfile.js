@@ -102,7 +102,10 @@ gulp.task('pug', function () {
 		return require(json);
 	}))
 	.pipe(pug({pretty: true}))
-	.pipe(gulp.dest(paths.public));
+	.pipe(gulp.dest(paths.public))
+	.pipe(browserSync.reload({
+		stream: true
+	}));
 });
 
 /**

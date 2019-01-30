@@ -39,7 +39,7 @@ $(document).ready(function () {
 	tl.to(htmlAndBody, .1, {overflowY: "hidden"});
 	tl.staggerFrom($('.animate'), .7, {y: -200, autoAlpha: 0}, 0.3);
 	tl.staggerFrom($('.including'), .3, {x: -400, autoAlpha: 0});
-	tl.staggerFrom($('.avatar'), .2, {x: 300, autoAlpha: 0});
+	tl.staggerFrom($('.avatar'), 0.6, {scale: 0, autoAlpha: 0,  ease: Sine.easeOut});
 	tl.staggerFromTo($('.row.second div'), .5, {y: 400, autoAlpha: 0}, {y:0, autoAlpha: 1}, 0.3);
 	tl.to(htmlAndBody, .1, {overflowY: "auto"});
 });
